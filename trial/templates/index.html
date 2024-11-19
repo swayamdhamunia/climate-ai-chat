@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot and Drought Prediction</title>
+   
+   
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Chatbot and Drought Prediction</h1>
+        <div id="chatbox"></div>
+        <input type="text" id="user_input" placeholder="Enter your message here..." />
+        <button id="send_button">Send</button>
+    </div>
+
+    <script>
+        document.getElementById('send_button').onclick = function() {
+            var user_input = document.getElementById('user_input').value;
+            if (user_input) {
+                // Display user input in chatbox
+                var chatbox = document.getElementById('chatbox');
+                chatbox.innerHTML += "<div><strong>You:</strong> " + user_input + "</div>";
+
+                // Send input to Flask server
+                fetch('/chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: 'message=' + encodeURIComponent(user_input)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Display chatbot response
+                    chatbox.innerHTML += "<div><strong>Bot:</strong> " + data.response + "</div>";
+                    chatbox.scrollTop = chatbox.scrollHeight;  // Auto scroll to the bottom
+                    document.getElementById('user_input').value = '';  // Clear input field
+                });
+            }
+        };
+    </script>
+</body>
+</html>

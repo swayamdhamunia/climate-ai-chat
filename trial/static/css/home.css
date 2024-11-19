@@ -1,0 +1,145 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e3f7fd; /* Light blue background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #3498db; /* Blue header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    color: #ecf0f1;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #2980b9; /* Darker blue navigation bar */
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav input[type="radio"] {
+    display: none; /* Hide the radio buttons */
+}
+
+nav label {
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 0 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #3498db;
+    transition: background-color 0.3s;
+}
+
+nav label:hover {
+    background-color: #1f6e92; /* Darker blue on hover */
+}
+
+nav input[type="radio"]:checked + label {
+    background-color: #1f6e92; /* Highlight the selected button */
+}
+
+/* Content Section Styling */
+h2 {
+    font-size: 1.8rem;
+    color: #2980b9;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2 {
+        font-size: 1.2rem;
+    }
+
+    nav label {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+.ai-section {
+    padding-top: 30px; /* Adds space above the section */
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #2980b9;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 10px auto;
+}
+/* Add padding above the second h2 and p elements */
+h2 {
+    font-size: 1.8rem;
+    color: #2980b9;
+    margin-bottom: 15px;
+    padding-top: 20px;  /* Add padding from above */
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 10px auto;
+    padding-top: 10px;  /* Add padding from above */
+}

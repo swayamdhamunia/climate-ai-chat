@@ -1,0 +1,90 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light background color */
+    color: #333; /* Dark text for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container Styling */
+.container {
+    background-color: #fff; /* White background for the chat container */
+    width: 100%;
+    max-width: 600px; /* Maximum width for the container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: space-between;
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 28px;
+    color: #3498db; /* Blue color for the header */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Chatbox Styling */
+#chatbox {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    height: 100%;
+    flex-grow: 1;
+    overflow-y: auto; /* Allows scrolling when chat gets long */
+    margin-bottom: 20px;
+}
+
+/* User and Bot Messages Styling */
+#chatbox div {
+    margin-bottom: 10px;
+}
+
+#chatbox strong {
+    color: #3498db; /* Blue color for bot and user labels */
+}
+
+/* Input field and Button Styling */
+#user_input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#send_button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+#send_button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+#send_button:active {
+    background-color: #2471a3; /* Even darker blue on click */
+}

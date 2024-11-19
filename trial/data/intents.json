@@ -1,0 +1,32 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Hello", "Hi there", "How are you?","hey","hii"],
+            "responses": ["Hello!", "Hi!", "How can I help you?"]
+        },
+        
+        {
+            "tag": "goodbye",
+            "patterns": ["Goodbye", "See you later","bye"],
+            "responses": ["Goodbye!", "See you later","bye","see you"]
+        },
+        
+        {
+            "tag":"water heritage",
+            "patterns":["What are the ways of water heritage","what are the way of water heritage","water heritage","ways of water heritage"],
+            "responses":["Water heritage encompasses a wide range of traditions, technologies, and cultural practices related to the management and use of water, passed down through generations. Throughout history, various civilizations have developed ingenious systems for managing water resources, particularly in regions with limited access to natural water. These systems include aqueducts, wells, cisterns, and stepwells, which were designed to capture, store, and distribute water efficiently. In places with dry climates, ancient irrigation systems, such as canals and terracing, have been crucial for sustaining agriculture and communities. Water structures like dams, reservoirs, and waterwheels have also played significant roles in enabling the use of water for drinking, farming, and even industrial work."]
+        },
+        {
+            "tag":"ground water",
+            "patterns":["what is ground water?"," ground water"],
+            "responses":["Groundwater is the water that exists beneath the Earth's surface in soil pore spaces and in the fractures of rock formations. It is a crucial part of the Earth's water cycle and is stored in underground layers called aquifers. These aquifers are made up of permeable materials like sand, gravel, or rock that allow water to flow through them. Groundwater is replenished through a process known as infiltration, where rainwater or surface water soaks into the ground and filters down to the aquifers."]
+        },
+        {
+            "tag": "preserve water",
+            "patterns": ["how to preserve water ","ways to preserve water","what are the ways to preserve water for future genration","how to preserve water"],
+            "responses": ["Preserving water is crucial for ensuring a sustainable and healthy environment, as well as for meeting the needs of growing populations around the world. There are numerous ways to conserve and preserve water at both the individual and societal levels. On a personal level, simple changes in daily habits, such as fixing leaky faucets, using water-efficient appliances, and reducing water usage during activities like showering or washing dishes, can significantly reduce water waste. Additionally, using rainwater harvesting systems to collect and store rain for irrigation or non-potable use can help reduce reliance on treated tap water."]
+        }
+        
+    ]
+}
